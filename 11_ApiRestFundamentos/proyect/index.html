@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap" rel="stylesheet">
+  <title>Random Dog</title>
+</head>
+
+<body>
+  <section id="dogsRandoms">
+    <span class="message_error"></span>
+    <div class="dogsRandoms_title">
+      <h2>Dog Elemental</h2>
+      <h1>WORLD OF DOGS</h1>
+    </div>
+    <div class="dogsRandoms_container">
+    </div>
+    <div class="dogsRandoms_buttons">
+      <button id="dogsRandoms_buttons-new" type="button"> News Dogs </button>
+      <form>
+        <input type="number" id="dogsRandoms_buttons-count" min="1" max="5" value="2">
+      </form>
+    </div>
+  </section>
+  <section id="uploadDogs">
+    <h2 class="uploadDogs_title">UPLOAD THE PHOTO OF YOUR DOG !</h2>
+    <div class="dogs_img dogs_img--preview"></div>
+    <form id="uploadForm">
+      <input id="file" type="file" name="file">
+      <div class="uploadForm_containerButtons">
+        <button id='buttonPreview' type="button" >PREVIEW</button>
+        <button id='buttonUpload' type="button" >SAVE</button>
+      </div>
+    </form>
+  </section>
+  <section id="dogsFavorites">
+    <div class="dogsFavorites_title">
+      <h1>FAVORITES DOGS</h1>
+    </div>
+    <div class="dogsFavorites_container">
+      <!-- <article>
+        <img src='https://www.colorhexa.com/f2f9fd.png' id="favoriteDog-3" class="ImageRick" >
+        <button> x </button>
+      </article> -->
+    </div>
+  </section>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <a id="PreviousContent" href="../randomImageFetchAwait/">Previous</a>
+  <script src="./main.js"></script>
+</body>
+
+</html>

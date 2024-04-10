@@ -1,0 +1,54 @@
+(() => {
+
+  type Sizes = 'S' | 'M' | 'L' | 'XL'
+  type Product = {
+    title: string,
+    createdAt : Date,
+    stock: number,
+    size?: Sizes
+  }
+  const login = (data: {email: string, password: number}) => {
+    console.log({ email: data.email, password: data.password });
+  };
+
+  login({
+    email: 'asdasd@asd',
+    password: 54713554
+  });
+
+  const products: Product[] = []
+
+  const addProdict = (data: Product) => {
+    products.push(data)
+    console.log(products)
+  }
+
+  addProdict({
+    title: 'TITLE 1',
+    createdAt: new Date(1930,5,6),
+    stock: 110,
+  })
+
+  addProdict({
+    title: 'TITLE 2',
+    createdAt: new Date(),
+    stock: 130,
+    size: 'XL'
+  })
+
+  // Desestruturacion
+
+
+  const printProduct = ({ title, createdAt, stock, size }: Product) => {
+    console.log(title);
+    console.log(createdAt);
+    console.log(stock);
+    console.log(size);
+  };
+  printProduct({
+    title: 'TITLE 2',
+    createdAt: new Date(),
+    stock: 130,
+    size: 'XL'
+  })
+})();

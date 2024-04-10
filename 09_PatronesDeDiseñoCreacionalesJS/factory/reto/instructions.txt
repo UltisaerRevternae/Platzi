@@ -1,0 +1,18 @@
+Reto: Sistema de Notificación
+Contexto
+Supongamos que estás desarrollando un sistema en el que necesitas enviar notificaciones a los usuarios. Estas notificaciones pueden ser de diferentes tipos: por email, SMS, y notificaciones push en una aplicación móvil. Cada tipo de notificación tiene su propia forma de ser enviada, pero desde el punto de vista del sistema, simplemente necesitas una manera de enviar la notificación, sin preocuparte por los detalles específicos de cada tipo.
+
+Objetivo
+Implementar un sistema de notificaciones utilizando el patrón Factory.
+
+Requisitos
+Interfaz Común de Notificación: Crea una interfaz Notificacion que tenga un método enviar(mensaje).
+Implementaciones Concretas: Crea tres clases concretas que implementen Notificacion:
+NotificacionEmail para enviar notificaciones por email.
+NotificacionSMS para enviar notificaciones por SMS.
+NotificacionPush para enviar notificaciones push a una aplicación móvil.
+Fábrica de Notificaciones: Crea una clase FabricaNotificaciones que tenga un método estático crearNotificacion(tipo) que devuelva una instancia del tipo de notificación deseado.
+Pruebas: Escribe un código que utilice FabricaNotificaciones para crear diferentes tipos de notificaciones y enviar un mensaje.
+Consideraciones Adicionales
+Piensa en cómo podrías expandir este sistema en el futuro para incluir nuevos tipos de notificaciones sin modificar la fábrica existente.
+No es necesario implementar la lógica real de envío de notificaciones; puedes usar impresiones en consola para simular las acciones.
